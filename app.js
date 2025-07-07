@@ -14,7 +14,7 @@ const flash = require('connect-flash');
 const passport = require('passport');
 const LocalStrategy = require('passport-local');
 const User = require('./models/user.js');
-const expressError = require('./utils/ExpressError.js');
+const ExpressError = require('./utils/ExpressError.js');
 
 // this is the link to connect this server to DB that is on mongoATLAS online
 const dbUrl = process.env.MONGO_URL;
@@ -119,7 +119,7 @@ app.use("/", userRouter);
 // error handling for all the routes including the routes not mentioned
 // wrap async is applied
 app.all(/.*/,(req, res, next)=>{
-    next(new expressError(404, "page not found"));
+    next(new ExpressError(404, "page not found"));
 })
 
 // eror handling
