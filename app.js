@@ -130,6 +130,6 @@ app.use((err, req, res, next)=>{
 })
 
 let port = 3000;
-app.listen(port, ()=>{
+app.listen(process.env.PORT, ()=>{
     console.log(`server is running on port ${port}`);
 }) 
