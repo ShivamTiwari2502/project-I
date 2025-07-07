@@ -1,0 +1,20 @@
+<% if(success.length && success) { %>
+    <div class="alert alert-success offset-3 col-6 alert-dismissible fade show" role="alert">
+        <%=success %>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+        <% } %>
+
+<% if(deleted.length && deleted) { %>
+    <div class="alert alert-danger offset-3 col-6 alert-dismissible fade show" role="alert">
+        <%=deleted %>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+<% } %>
+
+<% if(error.length && error) { %>
+    <div class="alert alert-danger offset-3 col-6 alert-dismissible fade show" role="alert">
+        <%=error %>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+<% } %>

@@ -1,0 +1,13 @@
+<% if(reviewAdded.length && reviewAdded) { %>
+    <div class="alert reviewAdded alert-success offset-3 col-6 alert-dismissible fade show" role="alert">
+        <%=reviewAdded %>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+<% } %>
+
+<% if(reviewDeleted.length && reviewDeleted) { %>
+    <div class="alert reviewDeleted alert-danger offset-3 col-6 alert-dismissible fade show" role="alert">
+        <%=reviewDeleted %>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+<% } %>

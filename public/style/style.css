@@ -1,0 +1,162 @@
+body {
+    font-family: "Montserrat", sans-serif !important;
+    font-size: smaller;
+    /* font-optical-sizing: auto !important;
+  font-weight:300 !important; 
+  font-style:normal !important; */
+}
+
+.navbar {
+    height: 5rem;
+}
+
+.navbar-nav {
+    padding-top: 10px;
+    height: 4em;
+}
+
+.fa-compass {
+    color: red;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: black !important;
+}
+
+.nav-link:hover {
+    /* font-size: 1.2rem; */
+    color: red !important;
+}
+
+.f-info {
+    background-color: #ebebeb !important;
+    /* display: flex; */
+    width: 100%;
+}
+
+.f-info i {
+    margin-right: 10px;
+    /* font-size: 1.5rem; */
+}
+
+.f-info-links a {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+.f-info div {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 1.35rem;
+    align-content: space-evenly;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.row-cols-lg-3 {
+    display: flex !important;
+}
+
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem !important;
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.card-text,
+.form-label {
+    font-size: medium;
+}
+
+.listing-link {
+    text-decoration: none;
+}
+
+.card-img-overlay {
+    opacity: 0 !important;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.2 !important;
+    background-color: white;
+}
+
+.add-btn {
+    color: white !important;
+    background-color: red !important;
+    border: none !important;
+}
+
+.add-btn:hover {
+    background-color: rgb(166, 166, 255) !important;
+}
+
+
+/* edit this listings */
+
+.edit-btn,
+.show-edit-btn {
+    color: white !important;
+    background-color: red !important;
+    border: none !important;
+}
+
+.edit-btn:hover {
+    background-color: lightskyblue !important;
+}
+
+.show-edit-btn:hover {
+    background-color: lightskyblue !important;
+}
+
+.show-btn {
+    display: flex !important;
+}
+
+.card p {
+    font-size: large !important;
+}
+
+/* new listing style */
+.invalid-feedback,
+.valid-feedback {
+    font-size: medium !important;
+
+}
+
+/* erros */
+.errors {
+    font-size: medium !important;
+}
+
+.review-rating, .review-comment{
+    font-size: medium !important;
+}
+
+.All-Reviews p{
+    font-size: medium !important;
+}
+
+.reviewAdded, .reviewDeleted{
+    font-size: medium !important;
+}
+
+*{
+    font-size:medium;
+}
