@@ -35,11 +35,6 @@ async function main() {
 main().then(res=>{console.log("database connected to", dbUrl)})
 .catch(err=>{console.log(err)}); 
 
-// different routes goes differnet ways
-const listingRouter = require("./routes/listing.js");
-const reviewRouter = require("./routes/review.js");
-const userRouter = require("./routes/user.js");
-
 // multiple middlewares are used
 app.use(methodOverride("_method"));
 app.use(express.static(path.join(__dirname, '/public')));
@@ -96,20 +91,10 @@ app.use((req, res, next)=>{
     next();
 })
 
-// app.get("/",(req, res)=>{
-//     res.send("<h1>This is Root directory </h1>");
-// })
-
-// creating a new user here
-app.get("/demouser", async(req, res)=>{
-    let fakeUser = new User({
-        email: "student@gmail.com",
-        username : "delta Student2"
-    })
-    // command to register user
-    // let registeredUser = await User.register(fakeUser, "helloworld");
-    // res.send(registeredUser);
-})
+// different routes goes differnet ways
+const listingRouter = require("./routes/listing.js");
+const reviewRouter = require("./routes/review.js");
+const userRouter = require("./routes/user.js");
 
 // different routes connected are used differently
 app.use("/listings", listingRouter);
