@@ -92,15 +92,9 @@ app.use((req, res, next)=>{
     res.locals.reviewAdded = req.flash("reviewAdded");
     res.locals.reviewDeleted = req.flash("reviewDeleted");
     res.locals.error = req.flash("error");
-    // res.locals.currentUser = req.user;
+    res.locals.currentUser = req.user || null;
     next();
 })
-
-app.use((req, res, next) => {
-  res.locals.currentUser = req.user; // or null if unauthenticated
-  next();
-});
-
 
 // app.get("/",(req, res)=>{
 //     res.send("<h1>This is Root directory </h1>");
